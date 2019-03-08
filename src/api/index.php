@@ -1,0 +1,9 @@
+<?php
+//////////////////////////////////////////////
+// Configuracion de las rutas de la API REST //
+//////////////////////////////////////////////
+
+// Importamos cada una de las diferentes rutas
+require __DIR__ . '/test.php';
+
+?>
