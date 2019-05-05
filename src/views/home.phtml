@@ -9,6 +9,15 @@
 <!-- HTML de cada pagina -->
 <div class="home">
     <h1>Home</h1>
+    <?php print_r($resultado) ?>
+    <br/>
+    <?php print_r($resultado[0]) ?>
+    <br/>
+    <?php print_r($resultado[0]['id_rol']) ?>
+    <br/>
+    <?php print_r($resultado[0]['roles_descripcion']) ?>
+    <br/>
+    <?php echo $textodeejemplo ?>
 </div>
 
 <?php /* incluimos el footer */ include __DIR__ . '/footer.phtml' ?>

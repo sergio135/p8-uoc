@@ -17,5 +17,8 @@ $app->get('/', function (Request $request, Response $response, array $args) {
     $resultado = $ModeloUser->getAllData();
       
     // renderizamos la plantilla home.phtml pasando como argumento la variable que consederemos
-    return $this->view->render($response, 'home.phtml', []);
+    return $this->view->render($response, 'home.phtml', [
+        'resultado' => $resultado, 
+        'textodeejemplo' => 'hola que ases'
+    ]);
 });
