@@ -9,9 +9,9 @@ $config['displayErrorDetails'] = true;
 $config['addContentLengthHeader'] = false;
 
 $config['db']['host']   = 'localhost';
-$config['db']['user']   = 'user';
-$config['db']['pass']   = 'admin123';
-$config['db']['dbname'] = 'p8_data_base_name';
+$config['db']['user']   = 'suncoast';
+$config['db']['pass']   = 'suncoast123';
+$config['db']['dbname'] = 'suncoast_p8';
 
 $app = new \Slim\App(['settings' => $config]);
 

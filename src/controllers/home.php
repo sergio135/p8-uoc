@@ -11,8 +11,10 @@ $app->get('/', function (Request $request, Response $response, array $args) {
     // $response: objeto con metodos que sirve para responder al cliente.
     // $args: deferentes argumentos pasados en la peticion.
 
-    // $newsController = new User($this);
-
+    // Primero instanciamos el modelo que tenemos defino en otro archivo, no hace falta importar con require
+    $ModeloUser = new User($this);
+    // ejecutamos un metodo getAllData del modelo para traer algo de la DB, y lo ponemos en la variable resultados
+    $resultado = $ModeloUser->getAllData();
       
     // renderizamos la plantilla home.phtml pasando como argumento la variable que consederemos
     return $this->view->render($response, 'home.phtml', []);
